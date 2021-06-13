@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+// @dart=2.9
 typedef void CameraDeepArCallback(CameraDeepArController controller);
 typedef void OnImageCaptured(String path);
 typedef void OnVideoRecorded(String path);
@@ -113,7 +114,6 @@ class _CameraDeepArState extends State<CameraDeepAr> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     // DeepCameraArPermissions.checkForPermission().then((value) {
     //   print("Value checked.... $value");
@@ -127,7 +127,6 @@ class _CameraDeepArState extends State<CameraDeepAr> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -160,9 +159,9 @@ class _CameraDeepArState extends State<CameraDeepAr> {
       id,
       this,
     );
-    if (widget.cameraDeepArCallback == null) {
-      return;
-    }
+    // if (widget.cameraDeepArCallback == null) {
+    //   return;
+    // }
     widget.cameraDeepArCallback(controller);
     _controller = controller;
   }
