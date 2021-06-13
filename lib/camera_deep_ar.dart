@@ -61,7 +61,7 @@ class CameraDeepAr extends StatefulWidget {
   final OnImageCaptured onImageCaptured;
   final OnVideoRecorded onVideoRecorded;
   final OnCameraReady onCameraReady;
-  final String androidLicenceKey, iosLicenceKey;
+  final String? androidLicenceKey, iosLicenceKey;
   final RecordingMode recordingMode;
   final CameraDirection cameraDirection;
   final CameraMode cameraMode;
